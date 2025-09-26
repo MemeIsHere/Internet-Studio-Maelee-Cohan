@@ -7,12 +7,8 @@
       color: #ffffff;  
       text-align: center;
     }
-    project/
-  index.html
-  style.css
-  images/
-    bff-cover.jpg
 
+<link href="style.css" rel="stylesheet">
 
     h1, h2, h3 {
       font-family: 'Chewy', cursive;  
