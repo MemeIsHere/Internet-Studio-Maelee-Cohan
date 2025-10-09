@@ -1,7 +1,11 @@
+html {
+  background-image: url(images/css-pattern-by-magicpattern.png);  
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 body {
   font-family: 'Quicksand', sans-serif;
-  background-image: url(images/css-pattern-by-magicpattern.png);  
-  background-color: #f8f4ff;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -68,3 +72,4 @@ footer {
   box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
 }
 
+ 
