@@ -1,5 +1,20 @@
+  <style>
+@font-face {
+  font-display: swap;  
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/playfair-display-v40-latin-regular.woff2') format('woff2');  
+}
+  @font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/montserrat-v31-latin-regular.woff2') format('woff2'); 
+}
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #fff0f5;  
   margin: 0;
   padding: 0;
@@ -16,7 +31,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Playfair Display', cursive;
   font-size: 3rem;
   color: #ff66b2;
   margin: 0;
@@ -53,7 +68,7 @@ header h1 {
 }
 
 .about h2 {
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Playfair Display', cursive;
   color: #ff3399;
   text-align: center;
 }
@@ -74,7 +89,7 @@ header h1 {
 }
 
 .assignments h2 {
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Playfair Display', cursive;
   color: #ff66b2;
   text-align: center;
 }
@@ -112,3 +127,4 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+  </style>
