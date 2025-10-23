@@ -1,0 +1,140 @@
+<style>
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/playfair-display-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  font-size: clamp(16px, 1.5vw, 20px);
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #e6f0ff, #cce5ff);
+  margin: 0;    
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #cce5ff, #99ccff);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100vw;  
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;  
+}
+
+
+header h1 {
+  font-family: 'Playfair Display', cursive;
+  font-size: 3rem; 
+  color: #3399ff;  
+  margin: 0;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.working-image {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.working-image img {
+  max-width: 80%;
+  border-radius: 50%;  
+  border: 8px solid #66b2ff;  
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(102,178,255,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.working-image img:hover {
+  transform: scale(1.05);  
+  box-shadow: 0 0 30px rgba(102,178,255,0.7);  
+}
+
+.classmate {
+  background: linear-gradient(135deg, #e6f2ff, #cce0ff);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(102,153,255,0.2);
+}
+
+.classmate h2 {
+  font-family: 'Playfair Display', cursive;
+  color: #3366ff;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.classmate p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.box {
+  background: linear-gradient(135deg, #e6f7ff, #cce5ff);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(102,153,255,0.15);
+}
+
+.box h2 {
+  font-family: 'Playfair Display', cursive;
+  color: #3399ff;
+  text-align: center;
+}
+
+.box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.box li {
+  background: linear-gradient(135deg, #d6e8ff, #b3daff);
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(102,153,255,0.2);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle, rgba(173, 216, 230, 0.15) 20%, transparent 20%),
+    radial-gradient(circle, rgba(204, 229, 255, 0.15) 20%, transparent 20%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  pointer-events: none;
+  z-index: -1;
+}
+</style>
