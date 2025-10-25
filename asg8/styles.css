@@ -1,11 +1,11 @@
 <style>
-/* abyssinica-sil-regular - latin */
+/* abeezee-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Abyssinica SIL';
+  font-family: 'ABeeZee';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/abyssinica-sil-v9-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('fonts/abeezee-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-regular - latin */
 @font-face {
@@ -46,7 +46,7 @@ header {
 
 
 header h1 {
-  font-family: 'Abyssinica SIL', cursive;
+  font-family: 'ABeeZee', sans-serif;
   font-size: 3rem; 
   color: #3399ff;  
   margin: 0;
@@ -82,7 +82,7 @@ header h1 {
 }
 
 .classmate h2 {
-  font-family: 'Abyssinica SIL', cursive;
+  font-family: 'ABeeZee', sans-serif;
   color: #3366ff;
   text-align: center;
   font-size: 1.8rem;
@@ -104,7 +104,7 @@ header h1 {
 }
 
 .box h2 {
-  font-family: 'Abyssinica SIL', cursive;
+  font-family: 'ABeeZee', sans-serif;
   color: #3399ff;
   text-align: center;
 }
