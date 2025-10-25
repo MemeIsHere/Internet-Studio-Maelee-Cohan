@@ -1,20 +1,20 @@
 style>
-    
-      @font-face {
-  font-display: swap;  
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/playfair-display-v40-latin-regular.woff2') format('woff2');  
-}
-  @font-face {
-  font-display: swap;
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/montserrat-v31-latin-regular.woff2') format('woff2'); 
+  src: url('fonts/montserrat-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* bubbler-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Bubbler One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/bubbler-one-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
     
     body {
       font-family: 'Montserrat', sans-serif;
@@ -34,7 +34,7 @@ style>
     }
 
     h1, h2, h3 {
-      font-family: 'Playfair Display', sans-serif;
+      font-family: 'Bubbler One', sans-serif;
       color: #3a3a3a;
       margin-bottom: 0.5em;
     }
