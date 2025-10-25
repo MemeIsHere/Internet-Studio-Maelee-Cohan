@@ -1,17 +1,19 @@
-<style>
+  <style>
+/* montserrat-regular - latin */
 @font-face {
-  font-display: swap;  
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/playfair-display-v40-latin-regular.woff2') format('woff2');  
-}
-  @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/montserrat-v31-latin-regular.woff2') format('woff2'); 
+  src: url('fonts/montserrat-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* abeezee-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/abeezee-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -31,7 +33,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Playfair Display', cursive;
+  font-family: 'ABeeZee', cursive;
   font-size: 3rem;
   color: #ff66b2;
   margin: 0;
@@ -68,7 +70,7 @@ header h1 {
 }
 
 .about h2 {
-  font-family: 'Playfair Display', cursive;
+  font-family: 'ABeeZee', cursive;
   color: #ff3399;
   text-align: center;
 }
@@ -89,7 +91,7 @@ header h1 {
 }
 
 .assignments h2 {
-  font-family: 'Playfair Display', cursive;
+  font-family: 'ABeeZee', cursive;
   color: #ff66b2;
   text-align: center;
 }
