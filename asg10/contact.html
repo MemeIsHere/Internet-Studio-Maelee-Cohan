@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us — Nanjing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Nanjing Travel</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="activities.html">Things To Do</a>
+        <a href="dining.html">Places To Eat</a>
+        <a href="statement.html">Design Statement</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>Contact Us</h2>
+    <!-- This form is static (non-functional) as requested -->
+    <form class="contact-form" action="#" method="post" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="phone">Phone #</label>
+      <input id="phone" name="phone" type="tel" pattern="[0-9+\-\s()]*">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="6"></textarea>
+
+      <div class="form-actions">
+        <button class="btn">Book Now</button>
+        <button class="btn outlined" type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong>Travel to Nanjing</strong><br>
+        Email: info@traveltonanjing.com<br>
+        Phone: +1(800) 677 4847 
+      </div>
+      <div class="footer-cta">
+        <a href="index.html" class="btn">Back to Home</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
