@@ -24,13 +24,11 @@ body {
   overflow-x: hidden;
 }
 
-/* Fluid Type Scale */
-html {
+ html {
   font-size: clamp(16px, 1.5vw + 0.5rem, 20px);
 }
 
-/* Header Styles */
-header {
+ header {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.6);
   border-bottom: 4px dotted #ff4da6;
@@ -53,8 +51,7 @@ header p {
   margin: 0 auto;
 }
 
-/* Flexbox Gallery Layout */
-.gallery {
+ .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -62,8 +59,7 @@ header p {
   padding: 2em;
 }
 
-/* Member Cards */
-.member {
+ .member {
   background-color: #ffffffcc;
   border-radius: 30px;
   padding: 1.5em;
@@ -80,16 +76,14 @@ header p {
   box-shadow: 0 10px 25px rgba(255, 77, 166, 0.4);
 }
 
-/* Member Titles */
-.member h2 {
+ .member h2 {
   font-family: 'ABeeZee', cursive;
   color: #ff4da6;
   font-size: clamp(1.2rem, 2vw, 1.8rem);
   margin-bottom: 0.5em;
 }
 
-/* Images */
-.member img {
+ .member img {
   width: 100%;
   height: auto;
   border-radius: 20px;
@@ -98,16 +92,12 @@ header p {
   margin-bottom: 1em;
 }
 
-/* Member Descriptions */
-.member p {
+ .member p {
   font-size: 1em;
   color: #e60073;
   line-height: 1.6;
 }
-
-/* ==========================================
-   Animated Floating Bubbles ✨🫧
-   ========================================== */
+ 
 body::before,
 body::after {
   content: "";
@@ -121,16 +111,14 @@ body::after {
   pointer-events: none;
 }
 
-/* Soft static bubble pattern layer */
-body::before {
+ body::before {
   background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.4) 10px, transparent 20px),
                     radial-gradient(circle at 80% 80%, rgba(255,255,255,0.3) 8px, transparent 15px),
                     radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 15px, transparent 25px);
   opacity: 0.5;
 }
 
-/* Floating bubble animation layer */
-body::after {
+ body::after {
   background-image:
     radial-gradient(circle 10px, rgba(255,255,255,0.6) 40%, transparent 60%),
     radial-gradient(circle 8px, rgba(255,255,255,0.5) 40%, transparent 60%),
@@ -139,8 +127,7 @@ body::after {
   opacity: 0.7;
 }
 
-/* Keyframes for upward bubble drift */
-@keyframes floatBubbles {
+ @keyframes floatBubbles {
   0% {
     background-position: 0 100%, 50% 120%, 100% 90%;
   }
@@ -152,8 +139,7 @@ body::after {
   }
 }
 
-/* Responsive Adjustments */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
   header p {
     font-size: 1em;
   }
