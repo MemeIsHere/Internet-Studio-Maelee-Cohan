@@ -1,0 +1,92 @@
+ /* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/montserrat-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* abeezee-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/abeezee-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+ body {
+  font-family: 'ABeeZee', sans-serif;
+  background: #ffe6f2;
+  background-image: radial-gradient(white 10%, transparent 11%), radial-gradient(white 10%, transparent 11%);
+  background-size: 25px 25px;
+  background-position: 0 0, 12.5px 12.5px;
+  margin: 0;
+  padding: 0;
+  color: #d63384;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', cursive;
+  color: #ff66c4;
+  text-shadow: 0 0 10px rgba(255, 182, 193, 1);
+}
+
+h1 {
+  font-size: 3.2em;
+  text-align: center;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.9em;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6em;
+  color: #b3006b;
+}
+
+.summary {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background: rgba(255, 240, 250, 0.85);
+  border-radius: 25px;
+  box-shadow: 0 0 20px pink;
+  border: 3px solid #ffb3da;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.movie-card {
+  background: rgba(255, 220, 240, 0.9);
+  padding: 18px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 0 15px #ffb3e6;
+  border: 3px dashed #ff99d6;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px hotpink;
+}
+
+.movie-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 18px;
+  box-shadow: 0 0 12px hotpink;
+  border: 3px solid #ffb6ea;
+}
