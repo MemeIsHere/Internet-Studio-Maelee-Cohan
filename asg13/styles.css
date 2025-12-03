@@ -1,0 +1,174 @@
+/* =============================
+   CUTE SPARKLY BUBBLY THEME ✨
+   Pastel Orange + Pastel Green + White
+   Google Fonts Added: "Poppins" + "Nunito"
+   ============================= */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Nunito:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #ffffff;
+    color: #444;
+}
+
+/* Sparkly Animated Background */
+.sparkly-bg {
+    background: linear-gradient(135deg, #fff7ef, #fde5c5, #e5f8e8);
+    background-size: 300% 300%;
+    animation: sparkleMove 12s ease infinite;
+}
+
+@keyframes sparkleMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.orange-word {
+  color: #ffb07c;
+  position: relative;
+}
+
+/* sparkle every 5 seconds */
+.orange-word::after {
+  content: "✨";
+  position: absolute;
+  right: -22px;
+  top: -10px;
+  animation: sparkle 5s infinite ease-in-out;
+}
+
+@keyframes sparkle {
+  0% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+  10% { opacity: 1; transform: scale(1.2) rotate(25deg); }
+  20% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+  100% { opacity: 0; }
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    color: #74c27c;
+    text-shadow: 0 0 10px rgba(255, 173, 130, 0.6);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #74c27c;
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+.intro {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 18px 22px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(255, 197, 158, 0.35);
+}
+
+/* Job Grid Layout */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Job Card Styling */
+.job-card {
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ffd8bf;
+    backdrop-filter: blur(6px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(255, 183, 138, 0.45);
+}
+
+.logo {
+    width: 95px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.job-card a {
+    text-decoration: none;
+    color: #ff8e4f;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.job-card p {
+    margin-top: 12px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* =============================
+   ANIMATED SPARKLES ✨
+   ============================= */
+.sparkly-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(255, 220, 180, 0.55) 2px, transparent 2px);
+    background-size: 80px 80px;
+    animation: sparkleFloat 6s linear infinite;
+}
+
+@keyframes sparkleFloat {
+    from { transform: translateY(0); }
+    to { transform: translateY(-220px); }
+}
+
+/* =============================
+   FLOATING BUBBLES 🫧
+   ============================= */
+.bubbles::before,
+.bubbles::after {
+    content: "";
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255,255,255,0.5), rgba(255,255,255,0));
+    border-radius: 50%;
+    top: 80%;
+    left: 20%;
+    animation: bubbleFloat 10s linear infinite;
+    pointer-events: none;
+}
+
+.bubbles::after {
+    left: 60%;
+    width: 260px;
+    height: 260px;
+    animation-duration: 14s;
+    animation-delay: 2s;
+}
+
+@keyframes bubbleFloat {
+    0% { transform: translateY(0) scale(1); opacity: 0.45; }
+    50% { opacity: 0.7; }
+    100% { transform: translateY(-800px) scale(1.33); opacity: 0; }
+}
